@@ -4,6 +4,7 @@
         "list": "cpp",
         "iosfwd": "cpp",
         "vector": "cpp",
-        "*.tpp": "cpp"
+        "*.tpp": "cpp",
+        "set": "cpp"
     }
 }
