@@ -10,7 +10,7 @@ class Span {
  private:
   Span();
   unsigned int len;
-  std::multiset<long long> mset;
+  std::vector<long long> vec;
 
  public:
   Span(unsigned int N);

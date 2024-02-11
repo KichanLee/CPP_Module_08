@@ -1,15 +1,14 @@
 #include <iostream>
 #include <set>
+#include <vector>
 
 int main() {
-  std::multiset<int> myMultiset;
+  std::vector<int> myvector;
 
-  myMultiset.insert(1);
-  myMultiset.insert(2);
-  myMultiset.insert(5);
-  myMultiset.insert(3);
-  myMultiset.insert(3);
-  myMultiset.insert(3);
+    myvector.push_back(1);
+  myvector.push_back(2);
 
-  return 0;
+  std::cout << myvector.size() << std::endl;
+  std::vector<int>::iterator begin = myvector.begin();
+  std::vector<int>::iterator end = myvector.end();
 }
