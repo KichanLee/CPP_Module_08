@@ -3,6 +3,7 @@
 
 #include <algorithm>
 #include <iostream>
+#include <numeric>
 #include <set>
 #include <stdexcept>
 
@@ -10,9 +11,9 @@ class Span {
  private:
   Span();
   unsigned int len;
-  std::vector<long long> vec;
 
  public:
+  std::vector<int> vec;
   Span(unsigned int N);
   Span(const Span& rhs);
   Span& operator=(const Span& rhs);

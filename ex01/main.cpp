@@ -1,14 +1,18 @@
-#include <iostream>
-#include <set>
-#include <vector>
+#include "Span.hpp"
 
 int main() {
-  std::vector<int> myvector;
-
-    myvector.push_back(1);
-  myvector.push_back(2);
-
-  std::cout << myvector.size() << std::endl;
-  std::vector<int>::iterator begin = myvector.begin();
-  std::vector<int>::iterator end = myvector.end();
+  Span sp(10);
+  sp.addNumber(1147483677);
+  sp.addNumber(2);
+  sp.addNumber(7);
+  sp.addNumber(1110);
+  sp.addNumber(1111111);
+  sp.addNumber(232222);
+  sp.addNumber(50333);
+  for (std::vector<int>::iterator itr = sp.vec.begin(); itr != sp.vec.end() - 1;
+       ++itr)
+    std::cout << "itr val : " << *itr << " ";
+  std::cout << "\n";
+  std::cout << "longest Span : " << sp.longestSpan() << std::endl;
+  std::cout << "Shortest Span : " << sp.shortestSpan() << std::endl;
 }
