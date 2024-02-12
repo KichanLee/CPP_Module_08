@@ -21,8 +21,8 @@ class Span {
   long long longestSpan();
   virtual ~Span();
 
-  template <typename InputIterator>
-  void addNumbers(InputIterator first, InputIterator last) {
+  template <typename Iterator_input>
+  void addNumbers(Iterator_input first, Iterator_input last) {
     if (static_cast<size_t>(std::distance(first, last)) >
         this->len - this->vec.size()) {
       throw std::runtime_error(

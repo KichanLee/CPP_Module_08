@@ -3,7 +3,7 @@ CXX			=	c++
 CXXFLAGS	=	-Wall -Wextra -Werror -std=c++98
 RM			=	rm -rf
 SRCS		=	main.cpp \
-				span.cpp
+				Span.cpp
 OBJS		=	${SRCS:.c=.o}
 
 all	:
