@@ -4,16 +4,16 @@
 #include <algorithm>
 #include <iostream>
 #include <numeric>
-#include <set>
 #include <stdexcept>
+#include <vector>
 
 class Span {
  private:
   Span();
+  std::vector<int> vec;
   unsigned int len;
 
  public:
-  std::vector<int> vec;
   Span(unsigned int N);
   Span(const Span& rhs);
   Span& operator=(const Span& rhs);

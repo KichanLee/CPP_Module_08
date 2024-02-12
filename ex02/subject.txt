@@ -13,3 +13,28 @@ If you run it a first time with your MutantStack, and a second time replacing th
 MutantStack with, for example, a std::list, the two outputs should be the same. Of
 course, when testing another container, update the code below with the corresponding
 member functions (push() can become push_back()).
+
+=============================================================================================
+
+이제 더 심각한 문제로 넘어갈 차례입니다.
+이상한 것을 개발해 봅시다. std::stack 컨테이너는 매우 훌륭합니다. 
+불행히도, 이것은 유일한 STL 컨테이너 중 하나입니다. 이터러블하지 않습니다. 안타깝네요.
+하지만 우리가 왜 이것을 받아들여야 할까요?
+특히 원래 스택을 자유롭게 도살해서 누락된 기능을 만들 수 있다면 말이죠.
+이 불공평함을 바로잡으려면 std::stack 컨테이너를 이터러블하게 만들어야 합니다.
+MutantStack 클래스를 작성합니다. 이 클래스는 std::스택으로 구현됩니다.
+이 클래스는 모든 멤버 함수와 추가 기능인 이터레이터를 제공합니다.
+물론 모든 것이 예상대로 작동하는지 확인하기 위해 자체 테스트를 작성하고 제출해야 합니다.
+예상대로 작동하는지 확인해야 합니다.
+
+처음에 돌연변이 스택으로 실행하고 두 번째로 돌연변이 스택을
+를 예를 들어 std::list로 대체하여 실행하면 두 출력은 동일해야 합니다.
+물론 다른 컨테이너를 테스트할 때는 아래 코드를 해당 컨테이너에 해당하는
+멤버 함수로 업데이트해야 합니다(push()는 push_back()이 될 수 있음).
+
+Translated with www.DeepL.com/Translator (free version)
+
+======================================================================
+
+
+
