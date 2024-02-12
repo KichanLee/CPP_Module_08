@@ -9,7 +9,6 @@
 
 class Span {
  private:
-  Span();
   std::vector<int> vec;
   unsigned int len;
 
@@ -21,6 +20,16 @@ class Span {
   long long shortestSpan();
   long long longestSpan();
   virtual ~Span();
+
+  template <typename InputIterator>
+  void addNumbers(InputIterator first, InputIterator last) {
+    if (static_cast<size_t>(std::distance(first, last)) >
+        this->len - this->vec.size()) {
+      throw std::runtime_error(
+          "Adding these numbers would exceed the Span's capacity.");
+    }
+    std::copy(first, last, std::back_inserter(this->vec));
+  }
 };
 
 #endif

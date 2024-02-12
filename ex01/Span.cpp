@@ -1,7 +1,7 @@
 #include "Span.hpp"
 
 Span::Span(unsigned int N) : len(N) { vec.reserve(N); }
-Span::Span(const Span& rhs) : len(rhs.len), vec(rhs.vec) { *this = rhs; }
+Span::Span(const Span& rhs) : vec(rhs.vec), len(rhs.len) {}
 Span::~Span() {}
 Span& Span::operator=(const Span& rhs) {
   if (this != &rhs) {
